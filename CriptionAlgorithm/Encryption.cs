@@ -8,14 +8,26 @@ public class Encryption
     public string EncryptSequence(string sequence)
     {
         string encryptedSequence = "";
-        sequence = sequence.ToUpper();
-        for(int i = 0; i < sequence.Length; i++)
+        sequence = RemoveNonLetterSymbolsAndUpperCase(sequence);
+
+        for (int i = 0; i < encryptedSequence.Length; i++)
         {
-            for(int k = 0; k < alphabet.Length; k++)
+
+        }
+        return encryptedSequence;
+    }
+
+    public string RemoveNonLetterSymbolsAndUpperCase(string sequence)
+    {
+        string encryptedSequence = "";
+        sequence = sequence.ToUpper();
+        for (int i = 0; i < sequence.Length; i++)
+        {
+            for (int k = 0; k < alphabet.Length; k++)
             {
-                if(sequence[i] == alphabet[k] | sequence[i] == 'Й' | sequence[i] == 'Ё' | sequence[i] == 'Ъ')
+                if (sequence[i] == alphabet[k] | sequence[i] == 'Й' | sequence[i] == 'Ё' | sequence[i] == 'Ъ')
                 {
-                    if(sequence[i] == 'Й')
+                    if (sequence[i] == 'Й')
                     {
                         encryptedSequence += 'И';
                         break;
@@ -37,6 +49,7 @@ public class Encryption
                 }
             }
         }
+
         return encryptedSequence;
     }
 }
