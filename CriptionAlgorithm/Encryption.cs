@@ -10,9 +10,15 @@ public class Encryption
         string encryptedSequence = "";
         sequence = RemoveNonLetterSymbolsAndUpperCase(sequence);
 
-        for (int i = 0; i < encryptedSequence.Length; i++)
+        for (int i = 0; i < sequence.Length; i++)
         {
-
+            for (int j = 0; j < alphabet.Length; j++)
+            {
+                if(sequence[i] == alphabet[j])
+                {
+                    encryptedSequence += encryptAlphabet[j];
+                }
+            }
         }
         return encryptedSequence;
     }
