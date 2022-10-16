@@ -4,16 +4,16 @@ public class FrequencyOfOccurringCharacters
 {
     public void CountingFrequencyOfOccurringCharacters(string sequence)
     {
-        Dictionary<string, int> characters = new Dictionary<string, int>();
+        Dictionary<char, int> characters = new Dictionary<char, int>();
         for(int i = 0; i < sequence.Length; i++)
         {
-            if (!characters.ContainsKey(sequence[i].ToString()))
+            if (!characters.ContainsKey(sequence[i]))
             {
-                characters.Add(sequence[i].ToString(), 1);
+                characters.Add(sequence[i], 1);
             }
             else
             {
-                characters[sequence[i].ToString()]++;
+                characters[sequence[i]]++;
             }
         }
     }
