@@ -2,8 +2,8 @@
 
 public class Decryption
 {
-    string alphabet = "АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯ";
-    string encryptAlphabet = "ЦУКЕНГШЩЗХФЫВАПРОЛДЖЭЯЧСМИТЬБЮ";
+    string encryptAlphabet = "ЦЕЖЮЗМЛАРШИВГСУЧБЩОДЬХТПЯНКЭФЫ";
+    string alphabet = "ОZZZZZZZZZZZZZZZZZZZZZГZZZZZZZ";
 
     public string DecryptSequence(string sequence)
     {

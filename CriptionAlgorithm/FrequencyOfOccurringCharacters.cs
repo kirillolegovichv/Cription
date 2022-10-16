@@ -2,7 +2,7 @@
 
 public class FrequencyOfOccurringCharacters
 {
-    public void CountingFrequencyOfOccurringCharacters(string sequence)
+    public Dictionary<char, int> CountingFrequencyOfOccurringCharacters(string sequence)
     {
         Dictionary<char, int> characters = new Dictionary<char, int>();
         for(int i = 0; i < sequence.Length; i++)
@@ -16,5 +16,7 @@ public class FrequencyOfOccurringCharacters
                 characters[sequence[i]]++;
             }
         }
+
+        return characters;
     }
 }
