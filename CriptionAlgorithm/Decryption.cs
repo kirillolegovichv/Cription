@@ -3,8 +3,8 @@
 public class Decryption
 {
     string encryptAlphabet = "ЦЕЖЮЗМЛАРШИВГСУЧБЩОДЬХТПЯНКЭФЫ";
-    string alphabet = "ОZZZZZZZZZZZZZZZZZZZZZГZZZZZZZ";
-
+    string alphabet = "ОАИНЕЛТРСВКДМПУЯЗЧГЬЫБХЮЖШФЭЩЦ";
+    
     public string DecryptSequence(string sequence)
     {
         string encryptedSequence = "";

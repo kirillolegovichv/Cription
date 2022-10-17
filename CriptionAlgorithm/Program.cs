@@ -5,17 +5,17 @@ Decryption dec = new Decryption();
 FrequencyOfOccurringCharacters fr = new FrequencyOfOccurringCharacters();
 Dictionary<char, int> dict = new Dictionary<char, int>();
 
-//string seq = Console.ReadLine();
-//seq = seq.ToUpper();
+string seq = Console.ReadLine();
+seq = seq.ToUpper();
 //Console.WriteLine(enc.EncryptSequence(seq));
 
-string text = Console.ReadLine();
-text = text.ToUpper();
-Console.WriteLine(text);
-Console.WriteLine(dec.DecryptSequence(text));
+//string text = Console.ReadLine();
+//text = text.ToUpper();
+//Console.WriteLine(text);
+//Console.WriteLine(dec.DecryptSequence(seq));
 
-//dict = fr.CountingFrequencyOfOccurringCharacters(seq);
-//foreach(var c in dict)
-//{
-//    Console.WriteLine($"key: {c.Key} value {c.Value}");
-//}
+dict = fr.CountingFrequencyOfOccurringCharacters(seq);
+foreach(var c in dict)
+{
+    Console.WriteLine($"key: {c.Key} value {c.Value}");
+}
